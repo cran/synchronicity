@@ -16,19 +16,19 @@ setMethod('lock', signature(m='boost.mutex'),
   function(m, ...)
   {
     block = match.call()[['block']]
-    if (is.null(block)) block=FALSE
+    if (is.null(block)) block=TRUE
     if (!is.logical(block)) stop('The block argument should be logical')
     return(
-      .Call(ifelse(block, 'boost_try_lock', 'boost_lock'), m@mutexInfoAddr))
+      .Call(ifelse(block, 'boost_lock', 'boost_try_lock'), m@mutexInfoAddr))
   })
 setMethod('lock.shared', signature(m='boost.mutex'),
   function(m, ...)
   {
     block = match.call()[['block']]
-    if (is.null(block)) block=FALSE
+    if (is.null(block)) block=TRUE
     if (!is.logical(block)) stop('The block argument should be logical')
     return( 
-      .Call(ifelse(block, 'boost_try_lock_shared', 'boost_lock_shared'),
+      .Call(ifelse(block, 'boost_lock_shared', 'boost_try_lock_shared'),
         m@mutexInfoAddr))
   })
 setMethod('unlock', signature(m='boost.mutex'),

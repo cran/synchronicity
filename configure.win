@@ -3,13 +3,15 @@
 # John W. Emerson and Michael Kane
 #
 # 64-bit Windows toolchain not completely BOOST-compatible (the
-# fault of BOOST, not R-Project).
+# fault of BOOST, not R-Project).  There will be no locking
+# of the shared counters, but the chance of a problem is very
+# small.  Hopefully BOOST will catch up, soon.
 
 FLAGS="-I../include"
 echo -n "  checking for Windows 64-bit..."
 if [ "${R_ARCH}" = "/x64" ]; then
-  echo "yes: sorry, not supported as of 6/1/2010"
-  FLAGS="${FLAGS} -DINTERLOCKED_EXCHANGE_HACK"
+  echo "yes"
+  echo "  ERROR: BOOST/mingw not fully 64-bit mutex-capable, 6/1/2010"
 else
   echo "no"
 fi
