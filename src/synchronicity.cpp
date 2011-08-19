@@ -239,6 +239,14 @@ SEXP boost_unlock( SEXP mutexInfoAddr )
 {
   BoostMutexInfo *pmi= 
     reinterpret_cast<BoostMutexInfo*>(R_ExternalPtrAddr(mutexInfoAddr));
+  if (!pmi->locked())
+  {
+    SEXP ret = PROTECT(NEW_LOGICAL(1));
+    LOGICAL_DATA(ret)[0] = Rboolean(0);
+    warning("This mutex is already unlocked.");
+    UNPROTECT(1);
+    return(ret);
+  }
   pmi->locked() = false;
   return boost_unlock( pmi->name(), 
     bind( &named_upgradable_mutex::unlock, _1 ) );
@@ -277,6 +285,14 @@ SEXP boost_unlock_shared( SEXP mutexInfoAddr )
 {
   BoostMutexInfo *pmi= 
     reinterpret_cast<BoostMutexInfo*>(R_ExternalPtrAddr(mutexInfoAddr));
+  if (!pmi->locked())
+  {
+    SEXP ret = PROTECT(NEW_LOGICAL(1));
+    LOGICAL_DATA(ret)[0] = Rboolean(0);
+    warning("This mutex is already unlocked.");
+    UNPROTECT(1);
+    return(ret);
+  }
   pmi->locked() = false;
   return boost_unlock( pmi->name(),
     bind( &named_upgradable_mutex::unlock_sharable, _1 ) );

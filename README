@@ -7,3 +7,7 @@
 # If you want to use this package with 32-bit Windows, it may be
 # possible (comment out the OS_type line in DESCRIPTION).
 #
+
+# October 30, 2010.  Modified configure to fix up a Solaris problem.
+
+
