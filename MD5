@@ -1,8 +1,8 @@
-9fefd81dc74fa49602a99052ea779458 *DESCRIPTION
-8eb93893a4009eb470e53d613eed5448 *NAMESPACE
-43c31f59e05f2f40dcd767d2ce41c737 *R/mutexes.R
+d551d3382424cbd5a31645fac78c69c0 *DESCRIPTION
+ec718e2a58859b911327c81c56efa917 *NAMESPACE
+0021b9b285c8ffcf4f6413d1a8003d53 *R/mutexes.R
 3d928812806dda188cfd6526ed5e5ab5 *R/uuid.R
-c0b3c0aeb52a24bed42d5f4579d8919d *R/zzz.R
+272d292e8efe21157bcb8d9bcb410117 *R/zzz.R
 e49041bfa07ff489a06429a1e28563e2 *README
 df665c330920d29973e9723a009da3f1 *cleanup
 b745347696499840471147a42c492dba *configure
@@ -1976,9 +1976,9 @@ dcacbeec470c2dc86a9459d77965c4e8 *man/describe.Rd
 bfa6eb5ddbf1a318e87a0b03490f79d1 *man/is.timed.Rd
 ff39f4ac65dd965df97f303aac603b94 *man/lock.Rd
 c4b8f58d7b058680ac0e08f2fca5a13c *man/shared.name.Rd
-6dcff2494c14a3268c04f41ea5ea4c8f *man/synchronicity-package.Rd
+30313468757eb9631e7d9fd66b475fb9 *man/synchronicity-package.Rd
 25554298725a52740a26519629c7863d *man/uuid.Rd
 7edefcf2f9b09a1267c8622d0ae3f968 *src/SharedCounter.cpp
-be81db489ce52dbaa214ef0b2d7417fa *src/synchronicity.cpp
+5193153d701e621661a5518b8c51bba6 *src/synchronicity.cpp
 406411572002c667360423b3c9007fc1 *src/util.cpp
 f7c46f0a725aa512dc75c465653f9eb1 *src/uuid_create.cpp
