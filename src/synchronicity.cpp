@@ -51,7 +51,7 @@ class BoostMutexInfo
         }
         catch(std::exception &e)
         {
-          printf("%s\n", e.what());
+          //printf("%s\n", e.what());
           return false;
         }
       }
@@ -94,7 +94,7 @@ SEXP boost_lock(const std::string &resourceName,
   catch (std::exception &e)
   {
     LOGICAL_DATA(ret)[0] = Rboolean(0);
-    printf("%s\n", e.what());
+    //printf("%s\n", e.what());
   }
   UNPROTECT(1);
   return ret;
@@ -113,7 +113,7 @@ SEXP boost_try_lock(const std::string &resourceName,
   catch (std::exception &e)
   {
     LOGICAL_DATA(ret)[0] = Rboolean(0);
-    printf("%s\n", e.what());
+    //printf("%s\n", e.what());
   }
   UNPROTECT(1);
   return ret;
@@ -133,7 +133,7 @@ SEXP boost_unlock(const std::string &resourceName,
   catch (std::exception &e)
   {
     LOGICAL_DATA(ret)[0] = Rboolean(0);
-    printf("%s\n", e.what());
+    //printf("%s\n", e.what());
   }
   UNPROTECT(1);
   return ret;
@@ -152,10 +152,10 @@ void DestroyBoostMutexInfo( SEXP mutexInfoAddr )
   BoostMutexInfo *pbmi = 
     reinterpret_cast<BoostMutexInfo*>(R_ExternalPtrAddr(mutexInfoAddr));
   std::string cmName = pbmi->name()+"_counter_mutex";
-  named_mutex mutex(open_or_create, cmName.c_str());
+  named_upgradable_mutex mutex(open_or_create, cmName.c_str());
   delete pbmi;
   R_ClearExternalPtr(mutexInfoAddr);
-  named_mutex::remove( cmName.c_str() );
+  named_upgradable_mutex::remove( cmName.c_str() );
 }
 
 SEXP CreateBoostMutexInfo( SEXP resourceName, SEXP timeout )
