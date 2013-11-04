@@ -1,4 +1,4 @@
-import(methods, bigmemory.sri)
+import(methods, bigmemory.sri, BH)
 export(uuid,boost.mutex)
 exportClasses(
   mutex,

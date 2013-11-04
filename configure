@@ -6,7 +6,7 @@
 # fault of BOOST, not R-Project).
 # Hopefully BOOST will catch up, soon.
 
-FLAGS="PKG_CPPFLAGS=-I../include"
+FLAGS="PKG_CPPFLAGS=-I../inst"
 LIBS=""
 
 echo -n "  checking for Sun Studio compiler..."
