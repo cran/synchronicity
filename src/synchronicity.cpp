@@ -7,8 +7,8 @@
 #include <R.h>
 #include <Rdefines.h>
 
-#include "util.h"
-#include "SharedCounter.h"
+#include "synchronicity/util.h"
+#include "synchronicity/SharedCounter.h"
 
 using namespace std;
 using namespace boost;
@@ -55,6 +55,7 @@ class BoostMutexInfo
           return false;
         }
       }
+      return false;
     }
     
     long timeout() const {return _timeout;}

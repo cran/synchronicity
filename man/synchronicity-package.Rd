@@ -14,11 +14,11 @@ support interprocess communication (ipc) and message passing.
 \tabular{ll}{
 Package: \tab synchronicity\cr
 Type: \tab Package\cr
-Version: \tab 1.1.0\cr
-Date: \tab 2012-09-12\cr
+Version: \tab 1.1.2\cr
+Date: \tab 2012-11-04\cr
 License: \tab LGPL-3\cr
 OS_type: \tab unix\cr
-Copyright: \tab (C) 2012 Michael J. Kane\cr
+Copyright: \tab (C) 2013 Michael J. Kane\cr
 URL: \tab http://www.bigmemory.org\cr
 LazyLoad: \tab yes\cr
 }

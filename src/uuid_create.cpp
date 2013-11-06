@@ -8,7 +8,7 @@
 #include <boost/uuid/uuid_io.hpp>
 
 #include <R.h>
-#include "util.h"
+#include "synchronicity/util.h"
 
 using namespace boost;
 
