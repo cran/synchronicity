@@ -140,13 +140,13 @@ SEXP boost_unlock(const std::string &resourceName,
   return ret;
 }
 
-extern "C"
-{
-
 ptime to_ptime( const long timeout )
 {
   return second_clock::local_time() + seconds( timeout );
 }
+
+extern "C"
+{
 
 void DestroyBoostMutexInfo( SEXP mutexInfoAddr )
 {

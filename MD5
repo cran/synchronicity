@@ -1,5 +1,5 @@
-ae71ecb2155450f0cfb6d6099eaa8cc2 *DESCRIPTION
-8e17e44c38996695f28ed17212cbfd4e *NAMESPACE
+be0da2ab20f8da4040738f9d986c13c9 *DESCRIPTION
+ec718e2a58859b911327c81c56efa917 *NAMESPACE
 0021b9b285c8ffcf4f6413d1a8003d53 *R/mutexes.R
 3d928812806dda188cfd6526ed5e5ab5 *R/uuid.R
 272d292e8efe21157bcb8d9bcb410117 *R/zzz.R
@@ -16,10 +16,10 @@ dcacbeec470c2dc86a9459d77965c4e8 *man/describe.Rd
 bfa6eb5ddbf1a318e87a0b03490f79d1 *man/is.timed.Rd
 ff39f4ac65dd965df97f303aac603b94 *man/lock.Rd
 c4b8f58d7b058680ac0e08f2fca5a13c *man/shared.name.Rd
-8bef8fce763b12171b6bb58d8bfdb2d7 *man/synchronicity-package.Rd
+e57fd5eaa0ca7d48417d1c9ec66cc073 *man/synchronicity-package.Rd
 25554298725a52740a26519629c7863d *man/uuid.Rd
 9c7cdcfcdd34b68d40c6af5860777684 *src/Makevars
 a5df81935d7e1ec7d40f11c72d41e448 *src/SharedCounter.cpp
-b9d1049c70f139032077b86ad2cbd86a *src/synchronicity.cpp
+1dfab1f07ed85384957b34eb9c598094 *src/synchronicity.cpp
 1ee9072754f64b955d7227fd67c6f2a5 *src/util.cpp
 43234f0b10040e6cce8207b67d7ac0fb *src/uuid_create.cpp
