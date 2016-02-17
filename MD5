@@ -1,4 +1,4 @@
-6ad4b535e7c87e1698695553966377b4 *DESCRIPTION
+49623340b8c1f1ff91414b72ab99393f *DESCRIPTION
 a355c8f37a45662244414ed324d22cc0 *NAMESPACE
 eafef9d9a74a3395ee6cbfc6c8ca28a4 *R/RcppExports.R
 3ccd0762ca716746d8cf6f94ba60c760 *R/mutexes.R
@@ -25,5 +25,5 @@ c4b8f58d7b058680ac0e08f2fca5a13c *man/shared.name.Rd
 25554298725a52740a26519629c7863d *man/uuid.Rd
 59ad96890120fdcb34afd7ae205bb394 *src/RcppExports.cpp
 8f17b7dee669dd7270c90223c379ba7d *src/SharedCounter.cpp
-4355cc63b59b26b582f91257df3f3a87 *src/synchronicity.cpp
+73f3bbd51d6f1ec408d48d5ddb65ce68 *src/synchronicity.cpp
 00dc36e6917472ff94f57c022c18eea1 *src/util.cpp
