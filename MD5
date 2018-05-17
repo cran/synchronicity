@@ -1,4 +1,4 @@
-52e053d95c87ddb30fbf0c00977cf0aa *DESCRIPTION
+154567feeac9670508443813929117fe *DESCRIPTION
 3fa1bfaa4ff6023d137f5070a0e0b8bd *NAMESPACE
 b1ac7c60751a723b62271dff10c091f6 *NEWS
 0c3703c9cf946d1c566fbab669a9d724 *R/RcppExports.R
@@ -22,7 +22,7 @@ bfa6eb5ddbf1a318e87a0b03490f79d1 *man/is.timed.Rd
 0314dccfa00781949565fb6134e0415b *man/lock-and-unlock-methods.Rd
 929970fbd0f55758b3831a733711b52c *man/shared-methods.Rd
 c4b8f58d7b058680ac0e08f2fca5a13c *man/shared.name.Rd
-5052fcd9820fe9346f00d761d3466a02 *man/synchronicity-package.Rd
+01fea8b1e20b6e2930429f62d2e3c389 *man/synchronicity-package.Rd
 25554298725a52740a26519629c7863d *man/uuid.Rd
 181f773807b1bb8487960dd6208e5449 *src/RcppExports.cpp
 dc52b3cea4dd382328608b245f03af55 *src/synchronicity.cpp
